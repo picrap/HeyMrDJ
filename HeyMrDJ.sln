@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyMrDJ.Core", "HeyMrDJ.Core\HeyMrDJ.Core.csproj", "{DFE65FCC-844E-4AB8-B0BB-9BF740201200}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{1B20AF8E-2B79-4F0B-90EB-A98F5A34DBF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeyMrDJ.CoreTest", "HeyMrDJ.CoreTest\HeyMrDJ.CoreTest.csproj", "{F5A62C23-7AC8-4975-906E-58667612547F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C79E53D4-187B-4BD9-9762-E12CC7C660BD}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBrainz", "MusicBrainz\MusicBrainz.csproj", "{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuoVia.FuzzyStrings", "DuoVia.FuzzyStrings\DuoVia.FuzzyStrings.csproj", "{29385A2D-EAC1-4777-BC01-C060C2002307}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages that were not signed", "Packages that were not signed", "{634DCA55-1826-404C-9A1D-5DF11A521541}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFE65FCC-844E-4AB8-B0BB-9BF740201200}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE65FCC-844E-4AB8-B0BB-9BF740201200}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE65FCC-844E-4AB8-B0BB-9BF740201200}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFE65FCC-844E-4AB8-B0BB-9BF740201200}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A62C23-7AC8-4975-906E-58667612547F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A62C23-7AC8-4975-906E-58667612547F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A62C23-7AC8-4975-906E-58667612547F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A62C23-7AC8-4975-906E-58667612547F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29385A2D-EAC1-4777-BC01-C060C2002307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29385A2D-EAC1-4777-BC01-C060C2002307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29385A2D-EAC1-4777-BC01-C060C2002307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29385A2D-EAC1-4777-BC01-C060C2002307}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F5A62C23-7AC8-4975-906E-58667612547F} = {1B20AF8E-2B79-4F0B-90EB-A98F5A34DBF4}
+		{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F} = {634DCA55-1826-404C-9A1D-5DF11A521541}
+		{29385A2D-EAC1-4777-BC01-C060C2002307} = {634DCA55-1826-404C-9A1D-5DF11A521541}
+	EndGlobalSection
+EndGlobal
