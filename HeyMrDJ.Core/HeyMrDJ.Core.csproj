@@ -39,6 +39,10 @@
     <AssemblyOriginatorKeyFile>Properties\HeyMrDJ.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DuoVia.FuzzyStrings, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DuoVia.FuzzyStrings.1.0.1\lib\net40\DuoVia.FuzzyStrings.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -51,13 +55,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\HeyMrDJ.snk" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DuoVia.FuzzyStrings\DuoVia.FuzzyStrings.csproj">
-      <Project>{29385A2D-EAC1-4777-BC01-C060C2002307}</Project>
-      <Name>DuoVia.FuzzyStrings</Name>
-    </ProjectReference>
     <ProjectReference Include="..\MusicBrainz\MusicBrainz.csproj">
       <Project>{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F}</Project>
       <Name>MusicBrainz</Name>
@@ -70,7 +73,9 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+    <Error Condition="!Exists('..\packages\SignReferences.0.1.0.3\build\SignReferences.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SignReferences.0.1.0.3\build\SignReferences.targets'))" />
   </Target>
+  <Import Project="..\packages\SignReferences.0.1.0.3\build\SignReferences.targets" Condition="Exists('..\packages\SignReferences.0.1.0.3\build\SignReferences.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

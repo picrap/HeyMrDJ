@@ -1,0 +1,24 @@
+# Hey Mr. DJ! appveyor.yml script
+
+version: '{branch}-{build}'
+
+branches:
+  only:
+    - master
+
+before_build:
+  nuget restore
+
+nuget:
+  account_feed: true
+  project_feed: true
+  disable_publish_on_pr: true
+
+configuration: Release
+platform: Any CPU
+
+build:
+  parallel: true   
+  publish_nuget: true
+  publish_nuget_symbols: true
+  verbosity: minimal

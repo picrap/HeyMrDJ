@@ -16,9 +16,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{C79E53
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicBrainz", "MusicBrainz\MusicBrainz.csproj", "{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuoVia.FuzzyStrings", "DuoVia.FuzzyStrings\DuoVia.FuzzyStrings.csproj", "{29385A2D-EAC1-4777-BC01-C060C2002307}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Packages that were not signed", "Packages that were not signed", "{634DCA55-1826-404C-9A1D-5DF11A521541}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{0B7259FA-C6C5-45C4-8591-4CB34265F57E}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,17 +39,11 @@ Global
 		{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{29385A2D-EAC1-4777-BC01-C060C2002307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{29385A2D-EAC1-4777-BC01-C060C2002307}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{29385A2D-EAC1-4777-BC01-C060C2002307}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{29385A2D-EAC1-4777-BC01-C060C2002307}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F5A62C23-7AC8-4975-906E-58667612547F} = {1B20AF8E-2B79-4F0B-90EB-A98F5A34DBF4}
-		{0C9F4A58-41E6-4BDB-B71D-59F35FAFA55F} = {634DCA55-1826-404C-9A1D-5DF11A521541}
-		{29385A2D-EAC1-4777-BC01-C060C2002307} = {634DCA55-1826-404C-9A1D-5DF11A521541}
 	EndGlobalSection
 EndGlobal
