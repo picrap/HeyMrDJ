@@ -11,7 +11,9 @@ namespace HeyMrDJ.CoreTest
     [TestClass]
     public class LookupTest
     {
+#if DEBUG
         [TestMethod]
+#endif
         public void SimpleLookupTest()
         {
             var l = new Lookup();
