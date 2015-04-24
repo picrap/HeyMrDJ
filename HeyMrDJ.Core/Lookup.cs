@@ -7,28 +7,20 @@
 namespace HeyMrDJ
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
+    using Data;
     using DuoVia.FuzzyStrings;
-    using ParkSquare.Gracenote;
 
     public class Lookup
     {
         public void T()
         {
-            var c = new GracenoteClient("5911808-2E02E745CE9704D2BADA6060D461A3F8");
-            var r5 = c.Search(new SearchCriteria { Artist = "Madonna", AlbumTitle = "Music" });
-            var r1 = c.Search(new SearchCriteria { Artist = "Didier Super", AlbumTitle = "Bin quoi?" });
-            var r2 = c.Search(new SearchCriteria { Artist = "Aphrodite's child", AlbumTitle = "666" });
-            var r3 = c.Search(new SearchCriteria { Artist = "Cyndi Lauper", AlbumTitle = "Twelve deadly cyns" });
-            var r4 = c.Search(new SearchCriteria { Artist = "Cindy Lauper", AlbumTitle = "Twelve deadly zinz" });
-
-            //var t = FindTracks(FindAlbum(FindArtist("Didier Super"), "Bin quoi?"));
-            //var t2 = FindTracks(FindAlbum(FindArtist("Aphrodite's child"), "666"));
-            //var t3 = FindTracks(FindAlbum(FindArtist("Cyndi Lauper"), "Twelve deadly cyns"));
-            //var t4 = FindTracks(FindAlbum(FindArtist("Cindy Lauper"), "Twelve deadly zinz"));
-            //var t5 = FindTracks(FindAlbum(FindArtist("Madonna"), "Mozik"));
-
+            var s = new GracenoteMusicLookup();
+            var r5 = s.Search("Madonna", "Music");
+            var r1 = s.Search("Didier Super", "Bin quoi?");
+            var r2 = s.Search("Aphrodite's child", "666");
+            var r3 = s.Search("Cyndi Lauper", "Twelve deadly cyns");
+            var r4 = s.Search("Cindy Lauper", "Twelve deadly zinz");
         }
 
         private static string Trim(string rawName)

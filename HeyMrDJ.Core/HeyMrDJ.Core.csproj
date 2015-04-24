@@ -54,6 +54,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\Album.cs" />
+    <Compile Include="Data\GracenoteMusicLookup.cs" />
+    <Compile Include="Data\IMusicLookup.cs" />
     <Compile Include="Lookup.cs" />
     <Compile Include="Properties\ProductInfo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
