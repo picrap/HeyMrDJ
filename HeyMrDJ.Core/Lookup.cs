@@ -15,12 +15,14 @@ namespace HeyMrDJ
     {
         public void T()
         {
-            var s = new GracenoteMusicLookup();
-            var r5 = s.Search("Madonna", "Music");
-            var r1 = s.Search("Didier Super", "Bin quoi?");
-            var r2 = s.Search("Aphrodite's child", "666");
-            var r3 = s.Search("Cyndi Lauper", "Twelve deadly cyns");
-            var r4 = s.Search("Cindy Lauper", "Twelve deadly zinz");
+            using (var s = new CacheMusicLookup(new GracenoteMusicLookup()))
+            {
+                var r5 = s.Search("Madonna", "Music");
+                var r1 = s.Search("Didier Super", "Bin quoi?");
+                var r2 = s.Search("Aphrodite's child", "666");
+                var r3 = s.Search("Cyndi Lauper", "Twelve deadly cyns");
+                var r4 = s.Search("Cindy Lauper", "Twelve deadly zinz");
+            }
         }
 
         private static string Trim(string rawName)

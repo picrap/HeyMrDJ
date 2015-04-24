@@ -5,10 +5,12 @@
 #endregion
 namespace HeyMrDJ.Data
 {
+    using System;
+
     /// <summary>
     /// Music Data Search
     /// </summary>
-    public interface IMusicLookup
+    public interface IMusicLookup: IDisposable
     {
         /// <summary>
         /// Searches the specified artist/album name.

@@ -56,5 +56,9 @@ namespace HeyMrDJ.Data
             catch { }
             return null;
         }
+
+        public void Dispose()
+        {
+        }
     }
 }
