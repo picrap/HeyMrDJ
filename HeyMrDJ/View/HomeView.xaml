@@ -1,17 +1,19 @@
-﻿<mui:ModernWindow x:Class="HeyMrDJ.HomeView"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
-        Title="HomeView" Height="300" Width="300">
+﻿<mui:ModernWindow x:Class="HeyMrDJ.View.HomeView"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  xmlns:l="clr-namespace:HeyMrDJ.Resources"
+                  Title="HomeView" Height="400" Width="600"
+                  ContentSource="/View/ConfigurationView.xaml">
     <mui:ModernWindow.MenuLinkGroups>
         <mui:LinkGroup DisplayName="{x:Static l:HomeLocale.WelcomeTitle}">
             <mui:LinkGroup.Links>
-                <mui:Link DisplayName="{x:Static l:HomeLocale.AutoConfigurationTitle}" Source="/View/HomeWelcomeView.xaml" />
+                <mui:Link DisplayName="{x:Static l:HomeLocale.ConfigurationTitle}" Source="/View/ConfigurationView.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
     </mui:ModernWindow.MenuLinkGroups>
 
     <Grid>
-        
+
     </Grid>
 </mui:ModernWindow>

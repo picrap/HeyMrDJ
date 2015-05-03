@@ -7,8 +7,21 @@
 namespace HeyMrDJ
 {
     using System.Windows;
+    using ArxOne.MrAdvice.Utility;
+    using ViewModel;
+    using ArxOne.MrAdvice.MVVM.Navigation;
 
-    public partial class HeyMrDJApplication : Application
+    public partial class HeyMrDJApplication 
     {
+        public HeyMrDJApplication()
+        {
+            Startup += OnStartup;
+        }
+
+        private void OnStartup(object sender, StartupEventArgs e)
+        {
+            var navigator = this.GetNavigator();
+            navigator.Show<HomeViewModel>();
+        }
     }
 }

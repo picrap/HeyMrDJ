@@ -6,12 +6,14 @@
 
 namespace HeyMrDJ.View
 {
+    using System.Windows.Controls;
+
     /// <summary>
-    /// Logique d'interaction pour HomeView.xaml
+    /// Interaction logic for ConfigurationView.xaml
     /// </summary>
-    public partial class HomeView 
+    public partial class ConfigurationView : UserControl
     {
-        public HomeView()
+        public ConfigurationView()
         {
             InitializeComponent();
         }
