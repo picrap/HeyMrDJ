@@ -55,12 +55,12 @@
       <HintPath>..\packages\ModernUI.WPF.1.0.6\lib\net40\Microsoft.Windows.Shell.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MrAdvice, Version=0.9.4.0, Culture=neutral, PublicKeyToken=c0e7e6eab6f293d8, processorArchitecture=MSIL">
-      <HintPath>..\packages\MrAdvice.Fody.0.9.4\lib\portable-net40+sl5+wp8\MrAdvice.dll</HintPath>
+    <Reference Include="MrAdvice, Version=0.9.6.0, Culture=neutral, PublicKeyToken=c0e7e6eab6f293d8, processorArchitecture=MSIL">
+      <HintPath>..\packages\MrAdvice.Fody.0.9.6\lib\portable-net40+sl5+wp8\MrAdvice.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MrAdvice.MVVM, Version=0.9.5.0, Culture=neutral, PublicKeyToken=fb2e9b0afc30ed24, processorArchitecture=MSIL">
-      <HintPath>..\packages\MrAdvice.MVVM.0.9.5.0\lib\net40-Client\MrAdvice.MVVM.dll</HintPath>
+    <Reference Include="MrAdvice.MVVM, Version=0.9.6.0, Culture=neutral, PublicKeyToken=fb2e9b0afc30ed24, processorArchitecture=MSIL">
+      <HintPath>..\packages\MrAdvice.MVVM.0.9.6.0\lib\net40-Client\MrAdvice.MVVM.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -109,6 +109,7 @@
     <None Include="..\HeyMrDJ.Core\Properties\HeyMrDJ.snk">
       <Link>Properties\HeyMrDJ.snk</Link>
     </None>
+    <None Include="app.config" />
     <None Include="HeyMrDJ.snk" />
     <None Include="packages.config" />
     <AppDesigner Include="Properties\" />
